@@ -11,6 +11,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.DefaultResourceLoader;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @Configuration
 @MapperScan("com.whocan.mybatis.mapper")
 public class MybatisConfig {

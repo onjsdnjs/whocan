@@ -1,5 +1,13 @@
 package com.whocan.web.member.domain;
 
+
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 public class Member {
 	
 	private String memberUid;       

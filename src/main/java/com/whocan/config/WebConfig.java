@@ -1,14 +1,10 @@
 package com.whocan.config;
 
-import java.nio.charset.Charset;
-import java.util.List;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -22,6 +18,13 @@ import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @EnableWebMvc
 @ComponentScan(basePackages = "com.whocan")
 public class WebConfig extends WebMvcConfigurerAdapter {

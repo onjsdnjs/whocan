@@ -14,6 +14,13 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 //import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @Configuration
 @EnableTransactionManagement
 public class DatabaseConfig {

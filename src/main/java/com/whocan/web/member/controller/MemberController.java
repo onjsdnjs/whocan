@@ -16,6 +16,13 @@ import org.springframework.web.servlet.ModelAndView;
 import com.whocan.web.member.domain.Member;
 import com.whocan.web.member.service.MemberService;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @RestController
 public class MemberController{
 

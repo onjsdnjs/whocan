@@ -1,18 +1,19 @@
 package com.whocan.web.home.controller;
 
-import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.whocan.web.home.domain.FormDTO;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @Controller
 public class HomeController {
 
@@ -21,23 +22,4 @@ public class HomeController {
 		return "/home";
 	}
 	
-	@ModelAttribute
-	public FormDTO createFormBean() {
-		return new FormDTO();
-	}
-	
-	@RequestMapping(value = "/", method=RequestMethod.POST)
-	public String submitMessage(@Valid FormDTO formDTO, BindingResult result,
-								SessionStatus sessionStatus,
-								RedirectAttributes redirectAttrs) {
-		
-		if (result.hasErrors()) {
-			return "/home";
-		}
-		String message = formDTO.toString();
-		sessionStatus.setComplete();
-		redirectAttrs.addFlashAttribute("message", message);
-		
-		return "redirect:/";
-	}
 }

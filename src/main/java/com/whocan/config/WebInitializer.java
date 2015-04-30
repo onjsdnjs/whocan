@@ -2,15 +2,16 @@ package com.whocan.config;
 
 
 import javax.servlet.Filter;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.AbstractEnvironment;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+
 /**
- * http://static.springsource.org/spring-framework/docs/3.2.0.RELEASE/spring-framework-reference/html/mvc.html#mvc-container-config
- * 
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
  *
  */
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {

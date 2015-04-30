@@ -8,6 +8,14 @@ import com.whocan.common.service.AbstractBaseService;
 import com.whocan.mybatis.mapper.member.MemberMapper;
 import com.whocan.web.member.domain.Member;
 
+
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 @Service("memberService")
 public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> implements MemberService {
 	

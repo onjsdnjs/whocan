@@ -1,5 +1,6 @@
 package com.whocan.config;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,10 +10,8 @@ import com.whocan.common.mongo.MongoTemplate;
 
 /**
  * <PRE>
- * 1. FileName	:	MongoConfig.java
- * 2. Comment	:	init MongoTemplate
- * 3. 작성자		:	pgmnle
- * 4. 작성일		:	2013. 7. 31.	오후 11:42:57
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
  * </PRE>
  *
  */

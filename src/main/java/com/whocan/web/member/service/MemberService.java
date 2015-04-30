@@ -4,6 +4,14 @@ import java.util.List;
 
 import com.whocan.web.member.domain.Member;
 
+
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 public interface MemberService {
 	
 	List<Member> selectMemberList(Member vo) throws Exception;
