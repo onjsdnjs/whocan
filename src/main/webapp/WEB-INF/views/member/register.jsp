@@ -19,40 +19,40 @@
 	
 	</script>
 
-<div class="container">
-  <h2>Member Register</h2>
-	<form class="form-horizontal" role="form" action="/rest/member/register" method="post">
-		<div class="form-group">
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="nickName">NickName:</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" name="nickName" id="nickName" placeholder="Enter nickName">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-2" for="passwd">Password:</label>
-				<div class="col-sm-10">
-					<input type="password" class="form-control" name="passwd" id="passwd" placeholder="Enter password">
-				</div>
-			</div>
-			<label class="control-label col-sm-2" for="email">Email:</label>
-			<div class="col-sm-10">
-				<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<div class="checkbox">
-					<label><input type="checkbox"> Remember me</label>
-				</div>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default">Submit</button>
-			</div>
-		</div>
-	</form>
-</div>	
+<h2 style="padding-left:210px;padding-bottom:20px;">Member Register</h2>
+<form class="form-horizontal" action="/rest/member/register" method="post">
+  <div class="form-group">
+    <label for="nickName" class="col-sm-2 control-label">Member UID</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="nickName" id="nickName" placeholder="NickName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="passwd" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="passwd" id="passwd" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
 </body>
 </html>

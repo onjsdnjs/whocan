@@ -29,17 +29,18 @@
 				    <thead>
 				    <tr>
 				        <!-- <th data-field="state" data-checkbox="true"></th> -->
-				        <th data-field="memberUid" data-align="center" data-sortable="true">MemberUid</th>
+				        <th data-field="memberUid" data-align="center" data-sortable="true">Member UID</th>
 				        <th data-field="nickName" data-align="center" data-sortable="true">NickName</th>
 				        <th data-field="passwd" data-align="center" data-sortable="true">Password</th>
 				        <th data-field="email" data-align="center" data-sortable="true">Email</th>
 				    </tr>
 				    </thead>
 				</table>
+				<div style="text-align:right;">
+				<p><a class="btn btn-primary btn-large" style="margin:10;" href="/member/register">Member Register </a></p>
+				</div>
  			</div>
 		</div>
-		<div class="hero-unit">
-			<p><a class="btn btn-primary btn-large" href="/member/register">Member Register </a></p>
-		</div>
+		
 </body>
 </html>

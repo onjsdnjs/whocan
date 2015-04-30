@@ -11,13 +11,13 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<div class="hero-unit">
+		<div class="hero-unit" style="padding-left:20px;">
 			<h1>Hello Whocan !!</h1>			
 			
 		</div>
 
-		<div class="hero-unit">
-			<p><a class="btn btn-primary btn-large" href="/member/members">Member List </a></p>
+		<div class="hero-unit" style="padding-left:20px;">
+			<p><a class="btn btn-primary btn-large" href="/member/members"> Member List </a></p>
 		</div>
 		
 </body>
