@@ -25,7 +25,7 @@
 		
 		<div class="row-fluid">
 			<div class="span8">
-				<table data-toggle="table" data-url="/rest/member/list" data-height="200" data-search="true">
+				<table data-toggle="table" data-url="/rest/member/list" data-height="300" data-search="true">
 				    <thead>
 				    <tr>
 				        <!-- <th data-field="state" data-checkbox="true"></th> -->
