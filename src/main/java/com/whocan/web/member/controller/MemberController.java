@@ -30,10 +30,11 @@ public class MemberController{
 	}
 
 	@RequestMapping(value="/register", method = RequestMethod.POST)
-	public void registerMember(Member member) throws Exception {
+	public String registerMember(Member member) throws Exception {
 		
 		member.setMemberUid(String.valueOf(System.currentTimeMillis())+UUID.randomUUID().toString());
 		memberService.insertMember(member);
+		return  "redirect:/member/list";
 	}
 	
 	@RequestMapping(value="/list/{id}", method = RequestMethod.GET)
@@ -44,9 +45,14 @@ public class MemberController{
 	}
 
 	@RequestMapping(value="/list", method = RequestMethod.GET)
-	public @ResponseBody String selectMemberList(HttpServletRequest request, HttpServletResponse response, Member member) throws Exception {
+	public @ResponseBody List<Member> selectMemberList(HttpServletRequest request, HttpServletResponse response, Member member) throws Exception {
 		
 		List<Member> selectMemberList = memberService.selectMemberList(member);
-		return selectMemberList.toString();
+		return selectMemberList;
+	}
+
+	@RequestMapping(value="/memberList", method = RequestMethod.GET)
+	public String selectMembers(HttpServletRequest request, HttpServletResponse response, Member member) throws Exception {
+		return "/member/members";
 	}
 }

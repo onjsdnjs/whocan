@@ -24,4 +24,9 @@ public abstract class AbstractBaseService<T> {
 	protected DBCollection getDBCollection(String collectionName) {
 		return MongoTemplate.getDBCollection(collectionName);
 	}
+	
+	protected <Mapper> Mapper getMapper(Class<Mapper> clz) {
+		Mapper mapper = (Mapper)commonSql.getSqlSession().getMapper(clz);
+		return mapper;
+	}
 }

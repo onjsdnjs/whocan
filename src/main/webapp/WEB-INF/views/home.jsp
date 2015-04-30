@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="hero-unit">
-			<p><a class="btn btn-primary btn-large" href="/member">Member Register </a></p>
+			<p><a class="btn btn-primary btn-large" href="/member/memberList">Member List </a></p>
 		</div>
 		
 		<div class="row-fluid">

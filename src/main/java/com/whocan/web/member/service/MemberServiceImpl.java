@@ -13,7 +13,7 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 	
 	@Override
 	public List<Member> selectMemberList(Member vo) throws Exception {
-		MemberMapper mapper = getMapper();
+		MemberMapper mapper = getMapper(MemberMapper.class);
 		List<Member> selectMemberList = mapper.selectMemberList(vo);
 		return selectMemberList;
 	}
@@ -25,18 +25,13 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 
 	@Override
 	public void insertMember(Member vo) throws Exception {
-		MemberMapper mapper = getMapper();
+		MemberMapper mapper = getMapper(MemberMapper.class);
 		mapper.insertMember(vo);
 	}
 
 	@Override
 	public void updateTeset(Member vo) throws Exception {
 		commonSql.update("Member.updateMember", vo);
-	}
-	
-	private MemberMapper getMapper() {
-		MemberMapper mapper = commonSql.getSqlSession().getMapper(MemberMapper.class);
-		return mapper;
 	}
 
 }

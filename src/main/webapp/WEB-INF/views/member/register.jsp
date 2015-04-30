@@ -31,6 +31,5 @@
 					</form>
 	 			</div>
 			</div>
-		<div id="result" style="width:100%; height:400px; overflow-y:scroll;"></div>
 </body>
 </html>
