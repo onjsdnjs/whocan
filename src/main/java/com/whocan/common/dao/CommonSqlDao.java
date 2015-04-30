@@ -4,6 +4,13 @@ import java.sql.SQLException;
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 public interface CommonSqlDao {
 	
     /**

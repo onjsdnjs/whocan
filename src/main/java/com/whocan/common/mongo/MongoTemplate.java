@@ -11,6 +11,13 @@ import com.mongodb.MongoClientOptions.Builder;
 import com.mongodb.ServerAddress;
 import com.mongodb.WriteConcern;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 public class MongoTemplate {
 	
 	private static DB db;	

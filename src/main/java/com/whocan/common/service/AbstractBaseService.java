@@ -10,6 +10,13 @@ import com.mongodb.DBCollection;
 import com.whocan.common.dao.CommonSqlDao;
 import com.whocan.common.mongo.MongoTemplate;
 
+/**
+ * <PRE>
+ * 1. author	:	정수원
+ * 2. date		:	2015.04.26
+ * </PRE>
+ *
+ */
 public abstract class AbstractBaseService<T> {
 
 	@SuppressWarnings("unchecked")
