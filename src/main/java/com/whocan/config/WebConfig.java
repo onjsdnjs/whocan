@@ -38,12 +38,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		localeChangeInterceptor.setParamName("lang");
 		registry.addInterceptor(localeChangeInterceptor);
 	}
-	
-	@Override
-	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-		Charset s = Charset.forName("UTF-8");
-		converters.add(new StringHttpMessageConverter(s));
-    }
 
 	@Bean
 	public LocaleResolver localeResolver() {

@@ -18,6 +18,7 @@ public class Member {
 	private String extraField5;   
 	private String regDate;   
 	private String updatedate;
+	private String state;
 	
 	public String getMemberUid() {
 		return memberUid;
@@ -115,6 +116,11 @@ public class Member {
 	public void setUpdatedate(String updatedate) {
 		this.updatedate = updatedate;
 	}
-	
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
 
 }

@@ -20,7 +20,9 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 
 	@Override
 	public Member selectMember(String memberUid) throws Exception {
-		return (Member) commonSql.selectOne("Member.selectMember", memberUid);
+		MemberMapper mapper = getMapper(MemberMapper.class);
+		Member member = mapper.selectMember(memberUid);
+		return member;
 	}
 
 	@Override

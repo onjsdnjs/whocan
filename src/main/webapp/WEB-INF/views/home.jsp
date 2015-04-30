@@ -4,7 +4,11 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
-    <title>Home</title>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 		<div class="hero-unit">
@@ -13,28 +17,8 @@
 		</div>
 
 		<div class="hero-unit">
-			<p><a class="btn btn-primary btn-large" href="/member/memberList">Member List </a></p>
+			<p><a class="btn btn-primary btn-large" href="/member/members">Member List </a></p>
 		</div>
 		
-		<div class="row-fluid">
-			<div class="span8">
-			
-				<form:form id="form" method="post" modelAttribute="formDTO">
-			
-				  	<form:input cssClass="input-block-level" path="messageFromUser" placeholder="${typeMessage}" autocomplete="off" />
-			 		
-					<form:errors path="messageFromUser" cssClass="alert alert-error" element="div"  />
-					
-		  			<c:if test="${not empty message}">
-						<div id="message" class="alert alert-success">
-							<spring:message code="message.youWrote" arguments="${message}" htmlEscape="true" />
-						</div>	
-					</c:if>
-					
-				  	<button type="submit" class="btn">Submit</button>
-					
-				</form:form>
-			</div>
-		</div>
 </body>
 </html>
