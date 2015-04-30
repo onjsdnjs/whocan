@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.whocan.mybatis.mapper.member.MemberMapper" >
+	
+	<select id="selectMemberList" parameterType="member" resultType="member">
+		SELECT 
+			member_uid as memberUid,
+			nick_name as nickName,       
+			social_code as socialCode,
+			social_token_key as socialTokenKey, 
+			email,
+			passwd,           
+			member_point as memberPoint,     
+			member_cash as memberCash,     
+			member_level as memberLevel,
+			extra_field1 as extraField1,     
+			extra_field2 as extraField2,     
+			extra_field3 as extraField3,     
+			extra_field4 as extraField4,     
+			extra_field5 as extraField5,     
+			reg_date as regDate,         
+			update_date as updateDate       
+		FROM WC_T_MEMBER
+	</select>
+
+	<select id="selectMember" parameterType="string" resultType="member">
+		SELECT 
+			member_uid as memberUid,
+			nick_name as nickName,       
+			social_code as socialCode,
+			social_token_key as socialTokenKey, 
+			email,
+			passwd,           
+			member_point as memberPoint,     
+			member_cash as memberCash,     
+			member_level as memberLevel,
+			extra_field1 as extraField1,     
+			extra_field2 as extraField2,     
+			extra_field3 as extraField3,     
+			extra_field4 as extraField4,     
+			extra_field5 as extraField5,     
+			reg_date as regDate,         
+			update_date as updateDate       
+		FROM WC_T_MEMBER
+		WHERE member_uid = #{memberUid}
+	</select>
+	
+	<insert id="insertMember" parameterType="member">
+		<selectKey keyProperty="id" order="AFTER" resultType="string">SELECT LAST_INSERT_ID()</selectKey>
+		INSERT INTO WC_T_MEMBER(
+								member_uid,
+								nick_name,       
+								social_code,     
+								social_token_key,
+								email,           
+								passwd,          
+								member_point,    
+								member_cash,     
+								member_level,    
+								extra_field1,    
+								extra_field2,    
+								extra_field3,    
+								extra_field4,    
+								extra_field5,    
+								reg_date,        
+								update_date
+								)
+							VALUE(
+								#{memberUid},
+								#{nickName},       
+								#{socialCode},     
+								#{socialTokenKkey},
+								#{email},          
+								#{passwd},         
+								#{memberPoint},    
+								#{memberCcash},    
+								#{memberLevel},    
+								#{extraField1},    
+								#{extraField2},    
+								#{extraField3},    
+								#{extraField4},    
+								#{extraField5},    
+								DATE_FORMAT(now(), '%Y%m%d%H%i%s'),       
+								DATE_FORMAT(now(), '%Y%m%d%H%i%s')
+								    )
+	</insert>
+	
+	<update id="updateMember" parameterType="member">
+		UPDATE WC_T_MEMBER SET
+		nick_name = #{nickName}
+		WHERE member_uid = #{memberUid}
+	</update>
+	
+</mapper>
+
+
+
+
+
+
