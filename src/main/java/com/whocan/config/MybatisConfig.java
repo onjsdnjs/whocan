@@ -9,7 +9,9 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.core.io.Resource;
 
 /**
  * <PRE>
@@ -28,6 +30,7 @@ public class MybatisConfig {
 		SqlSessionFactoryBean sb = new SqlSessionFactoryBean();
 		sb.setDataSource(dataSource);
 		sb.setConfigLocation(new DefaultResourceLoader().getResource("classpath:mybatis/config_mybatis.xml"));
+		sb.setMapperLocations(new Resource[] { new ClassPathResource("mybatis/mapper/MemberMapper.xml") });
 		return sb.getObject();
 	}
 
