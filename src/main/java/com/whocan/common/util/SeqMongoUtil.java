@@ -7,10 +7,8 @@ public class SeqMongoUtil {
 
 	/**
 	 * <PRE>
-	 * 1. MethodName	:	getSeq
-	 * 2. Comment		:	Lont type seq
-	 * 3. 작성자			:	
-	 * 4. 작성일			:	2013. 9. 3.	오후 4:55:59
+	 * 1. author	:	정수원
+	 * 2. date		:	2015.04.26
 	 * </PRE>
 	 *
 	 *	@param key
@@ -26,10 +24,8 @@ public class SeqMongoUtil {
 
 	/**
 	 * <PRE>
-	 * 1. MethodName	:	getSeqInt
-	 * 2. Comment		:	Integer type seq
-	 * 3. 작성자			:	
-	 * 4. 작성일			:	2013. 9. 3.	오후 4:56:09
+	 * 1. author	:	정수원
+	 * 2. date		:	2015.04.26
 	 * </PRE>
 	 *
 	 *	@param key

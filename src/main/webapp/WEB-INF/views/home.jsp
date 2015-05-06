@@ -4,19 +4,19 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
-  <title>Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <title>Member Register</title>
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/css/bootstrap-table.css">
+	<script src="/resources/js/jquery-2.1.3.min.js"></script>
+	<script src="/resources/js/bootstrap.min.js"></script>
+	<script src="/resources/js/bootstrap-table.js"></script>
 </head>
 <body>
-		<div class="hero-unit" style="padding-left:20px;">
-			<h1>Hello Whocan !!</h1>			
-			
+		<div class="hero-unit">
+			<h1>Hello Whocan !!</h1>
 		</div>
 
-		<div class="hero-unit" style="padding-left:20px;">
+		<div class="offset1">
 			<p><a class="btn btn-primary btn-large" href="/member/members"> Member List </a></p>
 		</div>
 		

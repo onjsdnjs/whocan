@@ -61,10 +61,8 @@ public class MongoTemplate {
 	
 	/**
 	 * <PRE>
-	 * 1. MethodName	:	getDBCollection
-	 * 2. Comment		:	DBCollection
-	 * 3. 작성자			:	
-	 * 4. 작성일			:	2013. 8. 20.	오전 10:35:20
+	 * 1. author	:	정수원
+	 * 2. date		:	2015.04.26
 	 * </PRE>
 	 *
 	 *	@param collectionName
@@ -76,10 +74,8 @@ public class MongoTemplate {
 	
 	/**
 	 * <PRE>
-	 * 1. MethodName	:	getDB
-	 * 2. Comment		:   DB 
-	 * 3. 작성자			:	
-	 * 4. 작성일			:	2013. 12. 12.	오후 9:28:56
+	 * 1. author	:	정수원
+	 * 2. date		:	2015.04.26
 	 * </PRE>
 	 *
 	 *	@param collectionName
