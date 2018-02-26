@@ -30,18 +30,6 @@ public class MemberController{
 
 	@Autowired MemberService memberService;
 	
-	@RequestMapping(value="/member/register", method = RequestMethod.GET)
-	public ModelAndView displayMember(Member member) throws Exception {
-
-		return new ModelAndView("/member/register");
-	}
-
-	@RequestMapping(value="/member/members", method = RequestMethod.GET)
-	public ModelAndView selectMembers(HttpServletRequest request, HttpServletResponse response, Member member) throws Exception {
-		
-		return new ModelAndView("/member/members");
-	}
-	
 	@PostMapping(value="/rest/member/register")
 	public void registerMember(Member member) throws Exception {
 		
