@@ -41,20 +41,4 @@ public class MybatisConfig {
 		return template;
 	}
 	
-	/*@Bean
-	@Autowired
-	public SqlSessionFactory sqlSessionFactory2(DataSource dataSource2) throws Exception{
-		SqlSessionFactoryBean sb = new SqlSessionFactoryBean();
-		sb.setDataSource(dataSource2);
-		sb.setConfigLocation(new DefaultResourceLoader().getResource("classpath:config_mybatis.xml"));
-		return sb.getObject();
-	}
-
-	@Bean
-	@Autowired
-	public SqlSessionTemplate sqlSession2(SqlSessionFactory sqlSessionFactory2){
-		SqlSessionTemplate s = new SqlSessionTemplate(sqlSessionFactory2);
-		return s;
-	}*/
-	
 }

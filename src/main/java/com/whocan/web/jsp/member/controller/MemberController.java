@@ -23,8 +23,6 @@ import com.whocan.web.rest.member.vo.Member;
 @Controller
 public class MemberController{
 
-	@Autowired MemberService memberService;
-	
 	@RequestMapping(value="/member/register", method = RequestMethod.GET)
 	public ModelAndView displayMember(Member member) throws Exception {
 

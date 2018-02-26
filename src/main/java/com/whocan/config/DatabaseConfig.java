@@ -1,7 +1,6 @@
 package com.whocan.config;
 
 
-import javax.annotation.Resource;
 //import javax.annotation.Resource;
 import javax.sql.DataSource;
 
@@ -12,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 //import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -51,25 +49,6 @@ public class DatabaseConfig {
         	}
             return ds;
         }
-        
-        /*@Bean
-        public DataSource dataSource2() {
-        	BasicDataSource ds = new BasicDataSource();
-        	try{
-        		ds.setDriverClassName(env.getProperty("db.pg.driverClassName"));
-        		ds.setUrl(env.getProperty("db.pg.url"));
-        		ds.setUsername(env.getProperty("db.pg.username"));
-        		ds.setPassword(env.getProperty("db.pg.password"));
-        		ds.setMaxActive(Integer.parseInt(env.getProperty("db.pg.maxActive")));
-        		ds.setMaxIdle(Integer.parseInt(env.getProperty("db.pg.maxIdle")));
-        		ds.setMaxWait(Integer.parseInt(env.getProperty("db.pg.maxWait")));
-        		ds.setDefaultAutoCommit(Boolean.parseBoolean(env.getProperty("db.pg.defaultAutoCommit")));
-        	
-        	}catch(Exception e){
-        		e.printStackTrace();
-        	}
-            return ds;
-        }*/
     }
 
     @Profile({"prd"})
