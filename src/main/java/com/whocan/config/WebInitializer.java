@@ -23,7 +23,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		System.setProperty(AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME, "prd");
+		System.setProperty(AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME, "dev");
 		return new Class<?>[] { WebConfig.class };
 	}
 
