@@ -323,7 +323,7 @@ public class DateUtil {
 	}
 	public static boolean isDate( String pOutformat, String vDate) {
 		SimpleDateFormat pOutformatter =  new SimpleDateFormat (pOutformat, java.util.Locale.KOREA);
-		Calendar cal = Calendar.getInstance(Locale.getDefault()) ;
+//		Calendar cal = Calendar.getInstance(Locale.getDefault()) ;
 		try {
 			pOutformatter.parse(vDate);
 			return true ;
