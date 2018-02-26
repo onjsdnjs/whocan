@@ -1,8 +1,8 @@
-package com.whocan.web.member.service;
+package com.whocan.web.rest.member.service;
 
 import java.util.List;
 
-import com.whocan.web.member.domain.Member;
+import com.whocan.web.rest.member.vo.Member;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.whocan.web.member.domain;
+package com.whocan.web.rest.member.vo;
 
 
 /**

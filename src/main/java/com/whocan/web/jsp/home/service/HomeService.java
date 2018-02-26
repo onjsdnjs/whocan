@@ -1,4 +1,4 @@
-package com.whocan.web.home.service;
+package com.whocan.web.jsp.home.service;
 
 /**
  * <PRE>

@@ -13,9 +13,9 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
  *
  */
 @Configuration
-@PropertySource({
-					"classpath:db.${spring.profiles.active:local}.properties", 
-					"classpath:conf.${spring.profiles.active:local}.properties"
+@PropertySource({	
+					"classpath:db.${spring.profiles.active}.properties", 
+					"classpath:conf.${spring.profiles.active}.properties"
 				})
 public class PropertiesConfig {
 

@@ -2,7 +2,7 @@ package com.whocan.mybatis.mapper.member;
 
 import java.util.List;
 
-import com.whocan.web.member.domain.Member;
+import com.whocan.web.rest.member.vo.Member;
 
 public interface MemberMapper {
 
