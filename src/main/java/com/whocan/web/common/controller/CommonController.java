@@ -38,7 +38,7 @@ public class CommonController {
 	}
 	
 	/*************************************************************
-	 *                          MEMBER                             *
+	 *                          MEMBER                           *
 	 ************************************************************/
 	
 	@RequestMapping(value="/member/register", method = RequestMethod.GET)
