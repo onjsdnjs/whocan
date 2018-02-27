@@ -22,15 +22,13 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 	@Override
 	public List<Member> selectMemberList(Member vo) throws Exception {
 		MemberMapper mapper = getMapper(MemberMapper.class);
-		List<Member> selectMemberList = mapper.selectMemberList(vo);
-		return selectMemberList;
+		return mapper.selectMemberList(vo);
 	}
 
 	@Override
 	public Member selectMember(String memberUid) throws Exception {
 		MemberMapper mapper = getMapper(MemberMapper.class);
-		Member member = mapper.selectMember(memberUid);
-		return member;
+		return mapper.selectMember(memberUid);
 	}
 
 	@Override
