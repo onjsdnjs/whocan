@@ -28,6 +28,7 @@ public class DatabaseConfig {
 	
 	@Profile({"dev"})
     static class Dev {
+		
 		@Autowired
 		Environment env;
 		
