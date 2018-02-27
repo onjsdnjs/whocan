@@ -1,6 +1,5 @@
 package com.whocan.web.rest.member.controller;
 
-
 import java.util.List;
 import java.util.UUID;
 
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.whocan.common.service.LoggingService;
-import com.whocan.web.common.controller.CommonController;
 import com.whocan.web.rest.member.service.MemberService;
 import com.whocan.web.rest.member.vo.Member;
 
