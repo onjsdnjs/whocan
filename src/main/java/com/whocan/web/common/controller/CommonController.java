@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.whocan.common.service.LoggingService;
 import com.whocan.web.rest.member.vo.Member;
 
 
@@ -23,7 +24,7 @@ import com.whocan.web.rest.member.vo.Member;
  *
  */
 @Controller
-public class CommonController {
+public class CommonController extends LoggingService<CommonController>{
 	
 	@Autowired Environment env;
 
@@ -33,7 +34,9 @@ public class CommonController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     public String displayHome(Model model) {
-		System.out.println(env.getProperty("name"));
+		
+		log.debug(env.getProperty("name"));
+		
 		return "/home";
 	}
 	

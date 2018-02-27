@@ -1,10 +1,5 @@
 package com.whocan.common.service;
 
-
-import java.lang.reflect.ParameterizedType;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.whocan.common.dao.CommonSqlDao;
 
@@ -15,10 +10,7 @@ import com.whocan.common.dao.CommonSqlDao;
  * </PRE>
  *
  */
-public abstract class AbstractBaseService<T> {
-
-	@SuppressWarnings("unchecked")
-	final protected Logger log = LoggerFactory.getLogger(((Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0]));
+public abstract class AbstractBaseService<T> extends LoggingService<T> {
 
 	@Autowired
 	protected CommonSqlDao commonSql;

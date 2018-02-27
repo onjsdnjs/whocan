@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.whocan.common.service.LoggingService;
+import com.whocan.web.common.controller.CommonController;
 import com.whocan.web.rest.member.service.MemberService;
 import com.whocan.web.rest.member.vo.Member;
 
@@ -21,7 +23,7 @@ import com.whocan.web.rest.member.vo.Member;
  *
  */
 @RestController
-public class MemberController{
+public class MemberController extends LoggingService<CommonController>{
 
 	@Autowired MemberService memberService;
 	
