@@ -23,7 +23,7 @@ import com.whocan.web.rest.member.vo.Member;
  *
  */
 @RestController
-public class MemberController extends LoggingService<CommonController>{
+public class MemberController extends LoggingService<MemberController>{
 
 	@Autowired MemberService memberService;
 	
