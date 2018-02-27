@@ -40,7 +40,7 @@ public class MemberServiceImpl extends AbstractBaseService<MemberServiceImpl> im
 	}
 
 	@Override
-	public void updateTeset(Member vo) throws Exception {
+	public void updateMember(Member vo) throws Exception {
 		commonSql.update("Member.updateMember", vo);
 	}
 

@@ -20,5 +20,5 @@ public interface MemberService {
 	
 	void insertMember(Member vo) throws Exception;
 	
-	void updateTeset(Member vo) throws Exception;
+	void updateMember(Member vo) throws Exception;
 }
