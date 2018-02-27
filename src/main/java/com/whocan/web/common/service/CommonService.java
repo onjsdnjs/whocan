@@ -1,4 +1,4 @@
-package com.whocan.web.jsp.home.service;
+package com.whocan.web.common.service;
 
 /**
  * <PRE>
@@ -7,6 +7,6 @@ package com.whocan.web.jsp.home.service;
  * </PRE>
  *
  */
-public interface HomeService {
+public interface CommonService {
 	
 }

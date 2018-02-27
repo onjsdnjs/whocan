@@ -1,16 +1,19 @@
-package com.whocan.web.jsp.member.controller;
-
+package com.whocan.web.common.controller;
 
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.whocan.web.rest.member.vo.Member;
+
 
 /**
  * <PRE>
@@ -20,8 +23,24 @@ import com.whocan.web.rest.member.vo.Member;
  *
  */
 @Controller
-public class MemberController{
+public class CommonController {
+	
+	@Autowired Environment env;
 
+	/*************************************************************
+	 *                          HOME                             *
+	 ************************************************************/
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+    public String displayHome(Model model) {
+		System.out.println(env.getProperty("name"));
+		return "/home";
+	}
+	
+	/*************************************************************
+	 *                          MEMBER                             *
+	 ************************************************************/
+	
 	@RequestMapping(value="/member/register", method = RequestMethod.GET)
 	public ModelAndView displayMember(Member member) throws Exception {
 
